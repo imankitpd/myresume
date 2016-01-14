@@ -1,404 +1,408 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery Parallax Plugin Demo</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#nav').localScroll(800);
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+      <div class="">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand top-header">My Resume</a>
+        </div> <!-- End navbar header -->
 
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li><a href="#about">About</a></li>
+             <li><a href="#resume">Resume</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#contact">Contact me</a></li>
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+              <li><a class="download-resume" href="other/resume.doc" title="Download Resume"><i class="fa fa-download"></i></a></li>
+          </ul>
+         </div>
+      </div> <!-- End container -->
+    </nav> <!-- End navbar -->
 
+    <section>
+      <div class="main-section">
+        <div class="bg-div">
+          <div class="bg"></div>
+          <div class="resume-title">
+            <div class="title-wrap">
+              <h3>HI I AM ANKIT PRASAD</h3>
+              <div class="clearfix"></div>
+              <h4><a href="#about" class="custom-scroll-link">Let's start</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="left">
+          <div class="img-wrapper">
+            <div class="img-div"></div>
+            <div class="overlay"></div>
+            <div class="text-head">
+              <span>My Resume</span>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-title">
+                <div class="shadow-section-title">
+                  <span>About</span>
+                </div>
+                <h3 class="media-heading" id="about">Who I Am</h3>
+                <h2 id="about_me">About</h2>
+                <div class="st-separator"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-5">
+              <div class="me-img">
+                <img src="images/me.jpg">
+              </div>
+            </div>
+            <div class="col-xs-7">
+              <div class="about-text">
+                <div class="name">
+                  <h2>ANKIT PRASAD</h2>
+                </div>
+                <div class="title">
+                  <h2>Web Designer &amp; Web Developer From INDIA</h2>
+                </div>
+                <div class="description">
+                  <p>Hi! My name is Ankit Prasad and i am a 28 years old full stack developer.</p>
+                  <p>I am a tech enthusiast who can't get enough of his Moto x play. You'll usually find me typing away furiously on my keyboard while eating a packet of chips (just one packet a day, no more). If, for some strange reason, i am not writing or reading up on technology, you’ll find me listening to music on my phone or laptop while trying to ensure my hair is all spiked up. I do hope you fine chaps enjoy my resume as much as I do.</p>
+                  <p><em>Patience, persistence and perspiration make an unbeatable combination for success.</em></p>
+                  <p>
+                    <a href="#" target="_self" class="btn btn-lg btn-holo">
+                      <i class="fa fa-angle-right"></i>
+                      <span>View Work</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="holo-separator"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="show-facts">
+                <div class="title">
+                  <h3>Some Facts</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="facts-count animaper">
+                <div class="num" data-content="1" data-num="10">0</div>
+                <h6>Finished Projects</h6>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="facts-count animaper">
+                <div class="num"  data-content="1" data-num="10">0</div>
+                <h6>Github repositories</h6>
+              </div>
+            </div>
+            <div class="col-xs-3">
+              <div class="facts-count animaper">
+                <div class="num" data-content="1" data-num="422">0</div>
+                <h6>Stack Overflow reputation</h6>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-separator margin-top"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="holo-separator"></div>
+            </div>
+          </div>
+          <div class="row" id="resume">
+            <div class="col-xs-12">
+              <div class="section-title">
+                <div class="shadow-section-title">
+                  <span>Resume</span>
+                </div>
+                <h3 class="media-heading">My Bio</h3>
+                <h2 id="about_me">Resume</h2>
+                <div class="st-separator"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="accordion" data-name="1">
+                <!-- Job -->
+                <div class="title">
+                  <h5>
+                    <a href="#">
+                      <i class="fa fa-briefcase"></i> Sep'10-Jan'11
+                      <span> - </span>
+                      <span>Work in company "CMC Ltd."</span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="description">
+                  <h4>Trainee Engineer</h4>
+                  <ul>
+                    <li>Hardware & Networking troubleshooting</li>
+                    <li>Windows 2003 server</li>
+                    <li>Branded Desktop and DMP, DeskJet, Laser Printer  support</li>
+                  </ul>
+                  <p>Given dedicated support to IT Department of IOCL (CMC’s client) in day shift, Handled More than 150 PC's & approx. 10 Laptop. Handled approx. 200 users of IOCL RSO</p>
+                </div>
 
-
-})
-</script>
-
-<!-- My code starts here -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-	<!-- Navbar -->
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="myNavbar">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-
-				<a href="" id="brand" class="navbar-brand">My Resume</a>
-
-			</div> <!-- End navbar header -->
-
-			 <!-- Collect the nav links, forms, and other content for toggling -->
-			 <div class="collapse navbar-collapse" id="navbar-collapse">
-				 <ul class="nav navbar-nav">
-					 <li><a href="#about">About</a></li>
-					 <li><a href="#resume">Resume</a></li>
-					 <li><a href="#skills">Skills</a></li>
-					 <li><a href="#contact">Contact me</a></li>
-				 </ul>
-			 </div>
-		</div> <!-- End container -->
-	</nav> <!-- End navbar -->
-
-	<div id="intro">
-		<div class="story">
-	    	<div class="text-center">
-					<p class="glyphicon glyphicon-cog"> </p>
-					<h1 style="padding-left: 70px">Hi ! I'm <div class="glyphicon glyphicon-font" style="display:inline-block"></div>nkit Prasad.</h1>
-
-	      </div>
-	  </div> <!--.story-->
-	</div> <!--#intro-->
-
-	<div id="second">
-		<div class="">
-	    	<div class="">
-					<!-- ABout me -->
-					      <!-- ABout me Image section -->
-					      <div class="" id="about">
-					        <div class="media-left media middle">
-					          <a href="#">
-					            <img class="image-responsive media-object" src="images/leftStreet.jpg" alt="image" id="left1Image">
-					          </a>
-					        </div>
-					        <!-- About Inner Text area -->
-					        <div class="media-body" id="aboutBody">
-					          <div class="">
-					            <div class="container">
-					              <hr>
-					              <h1 class="media-heading"><div id="whoIAm"><h3><strong>WHO I AM</strong><h3></div></h1>
-					              <h1><div id="aboutInner">About</div></h1>
-					               <div class="col-md-7">
-					                 <div class="media">
-					                    <div class="media-left">
-					                      <a href="#">
-					                        <img class="media-object" src="images/me.jpg" alt="My Image" id="meImage">
-					                      </a>
-					                    </div>
-					                    <div class="media-body">
-					                      <h2 class="media-heading"><h4>ANKIT PRASAD</h4><strong><h2>WEB DESIGNER & WEB DEVELOPER FROM INDIA</h2></strong></h2>
-					                      <p> This is all about me.This is all about me.This is all about me.This is all about me.</p>
-					                    </div>
-					                  </div>
-					               </div>
-					            </div>
-					          </div>
-					        </div><!-- End About Inner text area  -->
-					      </div><!-- End About me -->
-					<!-- ************************************************************************************************************************** -->
-	      </div>
-	  </div> <!--.story-->
-
-	</div> <!--#second-->
-
-	<div id="third">
-		<div class="">
-	    <div class="">
-				<!-- RESUME MY BIO (Educational Qualifications)-->
-
-						<div class="" id="resume">
-							<div class="media-left">
-								<a href="#">
-								<img class="media-object" src="images/resume.jpg" alt="Image" id="left2Image">
-								</a>
-							</div>
-							<div class="media-body">
-								<div class="container">
-									<hr>
-									<h1 class="media-heading"><div id="myBio"><h3><strong>MY BIO</strong><h3></div></h1>
-									<h1><div id="myBioInner">RESUME</div></h1>
-
-									<!-- panel (accordian) -->
-												<div class="panel-group col-md-7" id="accordian"> <!-- University studies -->
-													<div class="panel-default">
-														<div class="panel-heading">
-															<div class="panel-title">
-																<a href="#collapse-1" data-toggle="collapse" data-parent="#accordian" >
-																	<h3 class="glyphicon glyphicon-education" aria-hidden="true">  </h3><strong> 2005-2009</strong> University studies
-																</a>
-															</div> <!-- End panel title -->
-															<div class="panel-collapse collapse in" id="collapse-1"> <!-- Write "in" to make this question active -->
-																<div class="panel-body">
-																	<p>
-																			•	BE (I.T.) From Govt. Engineering College, Ajmer (Raj. University) (2009).
-																	</p>
-																</div>
-															</div><!-- End Panel collapse -->
-														</div>
-													</div>
-											</div> <!-- End university studies -->
-
-								<!-- school studies -->
-											<div class="panel-group col-md-7" id="accordian">
-												<div class="panel-default">
-													<div class="panel-heading">
-														<div class="panel-title">
-															<a href="#collapse-1" data-toggle="collapse" data-parent="#accordian" >
-																<h3 class="glyphicon glyphicon-book" aria-hidden="true">  </h3><strong> 2005</strong> School education
-															</a>
-														</div> <!-- End panel title -->
-														<div class="panel-collapse collapse in" id="collapse-1"> <!-- Write "in" to make this question active -->
-															<div class="panel-body">
-																<p>
-																		•	Senior Secondary Examination (RBSE) Ajmer. (2005)
-																</p>
-																<p>
-																	•	Secondary School Examination (RBSE) Ajmer. (2003).
-																</p>
-															</div>
-														</div><!-- End Panel collapse -->
-													</div>
-												</div>
-										</div>
-							</div>
-						</div>
-
-
-
-							<!-- ********************************************************************************************************************************  -->
-							      <!-- Skills -->
-							            <!-- Skills Image section -->
-							            <div class="" id="skills">
-							              <div class="media-left media middle">
-							                <a href="#">
-							                  <img class="image-responsive media-object" src="images/building.jpg" alt="image" id="left1Image">
-							                </a>
-							              </div>
-							              <!-- About Inner Text area -->
-							              <div class="media-body" id="aboutBody">
-							                    <hr>
-							                    <h1 class="media-heading"><div id="attainment"><h3><strong>ATTAINMENTS</strong><h3></div></h1>
-							                    <h1><div id="aboutInner">SKILLS</div></h1>
-
-							                    <div class="divOne"> <!-- divOne -->
-							                      <div class="divOne1"> <!-- divOne1 -->
-							                        <div> <!-- Bootstrap thumbnail -->
-							                          <div class="media">
-							                            <div class="media-left media-middle">
-							                              <a href="#">
-							                                <img class="media-object img-rounded" src="images/bootstrap.png" alt="Image">
-							                              </a>
-							                            </div>
-							                            <div class="media-body">
-							                              <span class="thumbHead"> Bootstrap </span>
-							                              <div class="progress">
-							                                <span> 60% </span>
-							                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							                                  60%
-							                                </div>
-							                              </div>
-							                            </div>
-							                          </div>
-							                        </div><!--End Bootstrap thumbnail -->
-							                      </div>
-							                      <div class="divOne2"> <!-- divOne2 -->
-							                        <div><!-- Angular thumbnail -->
-							                          <div class="media">
-							                            <div class="media-left media-middle">
-							                              <a href="#">
-							                                <img class="media-object img-rounded" src="images/angular.png" alt="Image">
-							                              </a>
-							                            </div>
-							                            <div class="media-body">
-							                              <span class="thumbHead"> AngularJS </span>
-							                              <div class="progress">
-							                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							                                  60%
-							                                </div>
-							                              </div>
-							                            </div>
-							                          </div>
-							                        </div><!--End Angular thumbnail -->
-							                      </div>
-							                    </div><!-- End divOne -->
-
-							                    <hr>
-
-							                    <div class="divOne"> <!-- divTwo -->
-							                      <div class="divOne1"> <!-- divOne1 -->
-							                        <div> <!-- javascript thumbnail -->
-							                          <div class="media">
-							                            <div class="media-left media-middle">
-							                              <a href="#">
-							                                <img class="media-object img-rounded" src="images/javascript.png" alt="Image">
-							                              </a>
-							                            </div>
-							                            <div class="media-body">
-							                              <span class="thumbHead"> Javascript </span>
-							                              <div class="progress">
-							                                <span> 60% </span>
-							                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							                                  60%
-							                                </div>
-							                              </div>
-							                            </div>
-							                          </div>
-							                        </div><!--End javascript thumbnail -->
-							                      </div>
-							                      <div class="divOne2"> <!-- divOne2 -->
-							                        <div><!-- jquery thumbnail -->
-							                          <div class="media">
-							                            <div class="media-left media-middle">
-							                              <a href="#">
-							                                <img class="media-object img-rounded" src="images/jquery.png" alt="Image">
-							                              </a>
-							                            </div>
-							                            <div class="media-body">
-							                              <span class="thumbHead"> JQUERY </span>
-							                              <div class="progress">
-							                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							                                  60%
-							                                </div>
-							                              </div>
-							                            </div>
-							                          </div>
-							                        </div><!--End jquery thumbnail -->
-							                      </div>
-							                    </div><!-- End divTwo -->
-
-
-							                    <hr>
-
-							                    <div class="divOne"> <!-- divThree -->
-							                      <div class="divOne1"> <!-- divOne1 -->
-							                        <div> <!-- javascript thumbnail -->
-							                          <div class="media">
-							                            <div class="media-left media-middle">
-							                              <a href="#">
-							                                <img class="media-object img-rounded" src="images/html.png" alt="Image">
-							                              </a>
-							                            </div>
-							                            <div class="media-body">
-							                              <span class="thumbHead"> HTML5 </span>
-							                              <div class="progress">
-							                                <span> 60% </span>
-							                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							                                  60%
-							                                </div>
-							                              </div>
-							                            </div>
-							                          </div>
-							                        </div><!--End javascript thumbnail -->
-							                      </div>
-							                      <div class="divOne2"> <!-- divOne2 -->
-							                        <div><!-- jquery thumbnail -->
-							                          <div class="media">
-							                            <div class="media-left media-middle">
-							                              <a href="#">
-							                                <img class="media-object img-rounded" src="images/css.png" alt="Image">
-							                              </a>
-							                            </div>
-							                            <div class="media-body">
-							                              <span class="thumbHead"> CSS3 </span>
-							                              <div class="progress">
-							                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-							                                  60%
-							                                </div>
-							                              </div>
-							                            </div>
-							                          </div>
-							                        </div><!--End jquery thumbnail -->
-							                      </div>
-							                    </div><!-- End divThree -->
-
-							                    <hr>
-
-							                  </div>
-							                </div>
-							              </div><!-- End About Inner text area  -->
-							            </div><!-- End About me -->
-
-
-							  <!-- footer -->
-							    <footer id="contact">
-							      <div class="container">
-							        <div class="row">
-
-							          <div class="fLeft">
-							            <div class="foot-head">
-							              <h4 class="glyphicon glyphicon-user" style="padding:20px;"> FIND ME</h4>
-							            </div>
-							            <br />
-							            <br />
-							            <ul class="list-inline">
-							              <li><a href="http://www.twitter.com">Twitter</a></li>
-							              <li><a href="http://www.facebook.com">Facebook</a></li>
-							              <li><a href="http://www.youtube.com">YouTube</a></li>
-							            </li>
-							          </ul>
-							          </div>
-
-
-							          <div class="fRight">
-							            <div class="foot-head">
-							              <h4 class="glyphicon glyphicon-envelope" style="padding:20px; width:400px;"> CONTACT INFO </h4>
-							            </div>
-							            <br />
-							            <br />
-							            <address>
-							              <p><div class="glyphicon glyphicon-home"></div> 12-B, PARIVAHAN NAGAR, ADARSH NAGAR, AJMER, RAJASTHAN-305001 </p>
-							              <p><div class="glyphicon glyphicon-envelope"></div> imankitpd@gmail.com </p>
-							              <p><div class="glyphicon glyphicon-earphone"></div> +91-9828674305</p>
-							            </address>
-							          </div>
-
-							        </div>
-							      </div>
-							    </footer>
-
-
-							    <div class="end">
-							      <div class="container text-center">
-							        <div class="row">
-							          <div class="col-sm-12" style="padding: 25px;">
-							            <p style="font-size: 10px; font-weight: bold; color: #FFC815; font-style: calibri; float: left; border-top: 1px solid #FFC815; padding:20px; border-top-left-radius: 50px; ">
-														&copy; MyResume 2016 DEVELOPED BY <span style="color:white;">ANKIT PRASAD</span>  |  ALL RIGHTS RESERVED.
-													</p>
-
-													<div class="">
-														<a href="#intro"><div class="glyphicon glyphicon-circle-arrow-up" style="font-size: 50px;"></div> </a>
-													</div>
-
-
-							          </div>
-							        </div>
-							      </div>
-							    </div>
-
-
-				<!-- ********************************************************************************************************************************  -->
-	    </div>
-	  </div> <!--.story-->
-	</div> <!--#third-->
-
-
-	<!-- My code -->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-			<script src="js/jquery.js"></script>
-			<!-- Include all compiled plugins (below), or include individual files as needed -->
-			<script src="js/bootstrap.js"></script>
+                <!-- University -->
+                <div class="title">
+                  <h5>
+                    <a href="#">
+                      <i class="fa fa-graduation-cap"></i> Aug'05-Aug'09
+                      <span> - </span>
+                      <span>University Studies</span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="description">
+                  <h4>B.E. (Information Technology)</h4>
+                  <p>Govt. Engineering College, Ajmer (University of Rajasthan) with 64%</p>
+                </div>
+                <!-- School -->
+                <div class="title">
+                  <h5>
+                    <a href="#">
+                      <i class="fa fa-graduation-cap"></i> July'03-May'05
+                      <span> - </span>
+                      <span>School Studies</span>
+                    </a>
+                  </h5>
+                </div>
+                <div class="description">
+                  <h4>Senior Secondary Examination (RBSE)</h4>
+                  <p>St. Paul's Sr. Sec. School, Ajmer. (2005) with 51%</p>
+                  <p>&nbsp;</p>
+                  <h4>Secondary School Examination (RBSE)</h4>
+                  <p>St. Paul's Sr. Sec. School, Ajmer. (2003) with 73%.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-separator margin-top"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="holo-separator"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-title">
+                <div class="shadow-section-title">
+                  <span>Skills</span>
+                </div>
+                <h3 class="media-heading">Attainments</h3>
+                <h2 id="about_me">Skills</h2>
+                <div class="st-separator"></div>
+              </div>
+            </div>
+          </div>
+          <div class="piechart-holder animaper" data-skcolor="#8F8F8F">
+            <div class="row">
+              <div class="piechart col-xs-3">
+                <span class="chart" data-percent="75">
+                  <span class="percent"></span>
+                </span>
+                <div class="description"><h4>Design</h4></div>
+              </div>
+              <div class="col-xs-8">
+                <div class="skillbar-box animaper">
+                  <!-- CSS -->
+                  <div class="title">
+                    <span>CSS</span>
+                  </div>
+                  <div class="skill-bar-percent">85%</div>
+                  <div class="skillbar-bg" data-percent="85%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                  <!-- HTML -->
+                  <div class="title">
+                    <span>HTML</span>
+                  </div>
+                  <div class="skill-bar-percent">75%</div>
+                  <div class="skillbar-bg" data-percent="75%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                  <!-- Photoshop -->
+                  <div class="title">
+                    <span>Photoshop</span>
+                  </div>
+                  <div class="skill-bar-percent">50%</div>
+                  <div class="skillbar-bg" data-percent="50%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="piechart-holder animaper" data-skcolor="#8F8F8F">
+            <div class="row">
+              <div class="piechart col-xs-3">
+                <span class="chart" data-percent="70">
+                  <span class="percent"></span>
+                </span>
+                <div class="description"><h4>Development</h4></div>
+              </div>
+              <div class="col-xs-8">
+                <div class="skillbar-box animaper">
+                  <!-- JavaScript -->
+                  <div class="title">
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="skill-bar-percent">70%</div>
+                  <div class="skillbar-bg" data-percent="70%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                  <!-- Jquery -->
+                  <div class="title">
+                    <span>Jquery</span>
+                  </div>
+                  <div class="skill-bar-percent">75%</div>
+                  <div class="skillbar-bg" data-percent="75%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                  <!-- AngularJS -->
+                  <div class="title">
+                    <span>AngularJS</span>
+                  </div>
+                  <div class="skill-bar-percent">55%</div>
+                  <div class="skillbar-bg" data-percent="55%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="piechart-holder animaper" data-skcolor="#8F8F8F">
+            <div class="row">
+              <div class="piechart col-xs-3">
+                <span class="chart" data-percent="80">
+                  <span class="percent"></span>
+                </span>
+                <div class="description"><h4>Languages</h4></div>
+              </div>
+              <div class="col-xs-8">
+                <div class="skillbar-box animaper">
+                  <!-- Hindi -->
+                  <div class="title">
+                    <span>Hindi</span>
+                  </div>
+                  <div class="skill-bar-percent">99%</div>
+                  <div class="skillbar-bg" data-percent="99%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                  <!-- English -->
+                  <div class="title">
+                    <span>English</span>
+                  </div>
+                  <div class="skill-bar-percent">70%</div>
+                  <div class="skillbar-bg" data-percent="70%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                  <!-- Japanese -->
+                  <div class="title">
+                    <span>French</span>
+                  </div>
+                  <div class="skill-bar-percent">35%</div>
+                  <div class="skillbar-bg" data-percent="35%">
+                    <div class="custom-skillbar" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="section-separator margin-top"></div>
+            </div>
+          </div>
+        </div>
+        <div class="height-gap"></div>
+        <footer>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="footer-info">
+                <h4>FIND ME</h4>
+              </div>
+              <div class="footer-social">
+                <ul>
+                  <li><a href="https://www.facebook.com/ankitprasad29" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="" target="_blank"><i class="fa fa-skype"></i></a></li>
+                  <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-info">
+                <h4>Contact Info</h4>
+              </div>
+              <ul class="footer-contacts">
+                <li><a href="#"><i class="fa fa-phone"></i> +91 9828674305</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> Ajmer, IN.</a></li>
+                <li><a href="#"><i class="fa fa-envelope-o"></i> imankitpd@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <div class="footer-info">
+                <h4>My Websites</h4>
+              </div>
+              <ul class="footer-contacts">
+                <li><a href="http://imankitpd.github.io/myresume/" target="_blank"><i class="fa fa-bar-chart"></i> My Resume</a></li>
+                <li><a href="" target="_blank"><i class="fa fa-briefcase"></i></a></li>
+                <li><a href="" target="_blank"><i class="fa fa-car"></i> </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright">
+                <p>&copy; MyResume 2016 DEVELOPED BY <a href="#">Ankit Prasad</a> | All rights reserved.</p>
+                <div class="to-top"><i class="fa fa-angle-double-up"></i></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/libs/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/libs/easy.pie.chart.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.appear.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
