@@ -912,6 +912,14 @@ h3.media-heading, .st-separator, .st-separator:before, .btn-holo, .footer-info h
 
 /* Media query for  320px*/
 @media screen and (max-width: 320px) {
+  #brand {
+    background-color: #FFC815 !important;
+    color: white;
+    font-family: calibri;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+}
   .main-text {
     padding-left: 10px;
     text-transform: uppercase;
