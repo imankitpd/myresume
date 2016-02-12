@@ -859,6 +859,9 @@ h3.media-heading, .st-separator, .st-separator:before, .btn-holo, .footer-info h
     position: relative;
     font-weight: bold;
 }
+#numbers {
+  display:none;
+}
 }
 
 /* Media query for  */
@@ -900,6 +903,9 @@ h3.media-heading, .st-separator, .st-separator:before, .btn-holo, .footer-info h
     text-align: center;
     /* padding-right: 14px; */
     margin-right: 40px;
+}
+#numbers {
+  display:none;
 }
 
 }
@@ -959,6 +965,9 @@ footer {
 }
 #copyright {
     opacity: .0;
+}
+h4, .h4 {
+    font-size: 11px;
 }
 }
 /*
