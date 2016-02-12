@@ -901,9 +901,10 @@ h3.media-heading, .st-separator, .st-separator:before, .btn-holo, .footer-info h
     /* padding-right: 14px; */
     margin-right: 40px;
 }
+
 }
 
-/* Media query for  */
+/* Media query for  320px*/
 @media screen and (max-width: 320px) {
   .main-text {
     padding-left: 10px;
