@@ -99,7 +99,7 @@ section {
   background-position: center;
   background-origin: content-box;
   background-image: url(../images/bg.jpg);
-  filter: blur(5px);
+  /*filter: blur(5px);*/
   background-color: #222222;
 }
 
