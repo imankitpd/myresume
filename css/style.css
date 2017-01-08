@@ -48,22 +48,24 @@ header {
 #brand{
   background-color: #FFC815 !important;
   color: white;
-  font-family: calibri;
   font-weight: bolder;
   text-transform:uppercase;
   font-size: 25px;
 }
 
-.nav-button {
+.download-resume {
     position: absolute;
-    top: 25px;
-    right: 16px;
-    z-index: 21;
-    width: 30px;
-    height: 40px;
-    line-height: 40px;
-    cursor: pointer;
+    top: 0;
+    right: 5px;
+    bottom: 0;
+    width: 60px;
     font-size: 24px;
+    text-align: center;
+    padding: 18px;
+}
+.download-resume i {
+  color: #000;
+  padding: 0;
 }
 
 section {
@@ -283,6 +285,13 @@ section {
   margin-left: -25px;;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 40%;
+    right:0;
+}
+
 .nav-li {
     display: inline-block;
     float: left;
@@ -312,14 +321,31 @@ transition: all .3s ease-in-out;
   transition: all 200ms linear;
 }
 
-.scroll-link:hover {
+.scroll-link:hover, .scroll-link:focus {
   color: #FFC815;
   text-decoration: none;
 
 }
 
 .scroll-link:active {
-  backgound: #FFC815;
+  background: #FFC815;
+}
+
+.facts-count .num {
+  font-size: 82px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+}
+.facts-count h6 {
+  margin-top: 10px;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 
@@ -464,11 +490,6 @@ transition: all .3s ease-in-out;
 .part2{
   text-align: right;
 }
-
-.inner-text {
-  font-weight: bold;
-}
-
 .part1 h4 {
     padding: 24px 27px;
     background: #FFC815;
@@ -1021,9 +1042,6 @@ h4, .h4 {
 }
 }
 /*
-
-
-
 li {
   float: left;
 }
@@ -1088,3 +1106,4 @@ li a{
   padding-bottom: 10px;
   font-weight: bolder;
 }
+*/
