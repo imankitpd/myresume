@@ -1,0 +1,56 @@
+/*-------------Import fonts ---------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text:400,700');
+@import url('https://fonts.googleapis.com/css?family=Assistant:200,600');
+body {
+  font-family: 'Noticia Text', serif;
+  font-size: 16px;
+}
+h1 {
+  font-family: 'Assistant', serif;
+  font-size: 50px;
+}
+ul {
+  padding-left: 20px;
+}
+a, a:hover {
+  text-decoration: none;
+}
+em, a, a:hover {
+  color: #888;
+}
+.dark {
+  color: #111;
+}
+.sub-header {
+  font-size: 24px;
+  font-family: 'Assistant', serif;
+}
+.resume-head {
+  background-color: #555;
+  color: #FFF;
+  overflow: hidden;
+}
+.resume-body {
+  background-color: #FFF;
+}
+.contact-details h3 {
+  color: #FF007B;
+}
+.skills-details h3 {
+  color: #ffAE00;
+}
+.languages-details h3 {
+  color: #798710;
+}
+.project-details h3 {
+  color: #08ABD3;
+}
+.experience-details h3 {
+  color: #660DA5;
+}
+.education-details h3 {
+  color: #C61919;
+}
+h3 {
+  font-weight: bold;
+}
